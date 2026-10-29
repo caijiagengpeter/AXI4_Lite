@@ -1,0 +1,112 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP1_Full64; Runtime version V-2023.12-SP1_Full64;  Oct 29 22:47 2026
+UVM_INFO /opt/Synopsys/vcs/V-2023.12-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test axi4l_v3_pipelined_test...
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(79) @ 0: uvm_test_top.env.axi4l_agent.driver [V3_PIPELINED] enabled: max_write_outstanding=3 max_read_outstanding=3
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 95000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=10 AW=7 W=10 addr=0x0 outstanding=1/3 seq_id=1 tr_id=1
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 135000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=14 AW=14 W=11 addr=0x18 outstanding=2/3 seq_id=1 tr_id=2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 265000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=27 addr=0x0 BRESP=00 aborted=0 outstanding=1/3 seq_id=1 tr_id=1
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 275000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=28 addr=0x18 BRESP=00 aborted=0 outstanding=0/3 seq_id=1 tr_id=2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 275000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=28 AW=28 W=28 addr=0x10 outstanding=1/3 seq_id=1 tr_id=3
+UVM_INFO ../tb/sequences/axi4l_v3_pipeline_seq.sv(87) @ 275000: uvm_test_top.env.axi4l_agent.sequencer@@seq [V3_SEQ_WRITE_RSP] request[0] issue_cycle=10 response_cycle=27 addr=0x0 data=0x13579bdf BRESP=00 seq_id=1 tr_id=1
+UVM_INFO ../tb/sequences/axi4l_v3_pipeline_seq.sv(87) @ 275000: uvm_test_top.env.axi4l_agent.sequencer@@seq [V3_SEQ_WRITE_RSP] request[1] issue_cycle=14 response_cycle=28 addr=0x18 data=0x00000015 BRESP=00 seq_id=1 tr_id=2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 285000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=29 addr=0x10 BRESP=00 aborted=0 outstanding=0/3 seq_id=1 tr_id=3
+UVM_INFO ../tb/sequences/axi4l_v3_pipeline_seq.sv(87) @ 285000: uvm_test_top.env.axi4l_agent.sequencer@@seq [V3_SEQ_WRITE_RSP] request[2] issue_cycle=28 response_cycle=29 addr=0x10 data=0xcafe0003 BRESP=00 seq_id=1 tr_id=3
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 295000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=30 addr=0x0 outstanding=1/3 seq_id=1 tr_id=4
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 305000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=31 addr=0x18 outstanding=2/3 seq_id=1 tr_id=5
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 465000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=47 addr=0x0 RDATA=0x13579bdf RRESP=00 aborted=0 outstanding=1/3 seq_id=1 tr_id=4
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 475000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=48 addr=0x18 RDATA=0x00000015 RRESP=00 aborted=0 outstanding=0/3 seq_id=1 tr_id=5
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 475000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=48 addr=0x10 outstanding=1/3 seq_id=1 tr_id=6
+UVM_INFO ../tb/sequences/axi4l_v3_pipeline_seq.sv(122) @ 475000: uvm_test_top.env.axi4l_agent.sequencer@@seq [V3_SEQ_READ_RSP] request[0] issue_cycle=30 response_cycle=47 addr=0x0 RDATA=0x13579bdf RRESP=00 seq_id=1 tr_id=4
+UVM_INFO ../tb/sequences/axi4l_v3_pipeline_seq.sv(122) @ 475000: uvm_test_top.env.axi4l_agent.sequencer@@seq [V3_SEQ_READ_RSP] request[1] issue_cycle=31 response_cycle=48 addr=0x18 RDATA=0x00000015 RRESP=00 seq_id=1 tr_id=5
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 485000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=49 addr=0x10 RDATA=0x00000000 RRESP=00 aborted=0 outstanding=0/3 seq_id=1 tr_id=6
+UVM_INFO ../tb/sequences/axi4l_v3_pipeline_seq.sv(122) @ 485000: uvm_test_top.env.axi4l_agent.sequencer@@seq [V3_SEQ_READ_RSP] request[2] issue_cycle=48 response_cycle=49 addr=0x10 RDATA=0x00000000 RRESP=00 seq_id=1 tr_id=6
+UVM_INFO ../tb/sequences/axi4l_v3_pipeline_seq.sv(147) @ 485000: uvm_test_top.env.axi4l_agent.sequencer@@seq [V3_PIPELINE_PROOF] WRITE A(issue=10 rsp=27) B(issue=14 rsp=28) C(issue=28 rsp=29); READ A(issue=30 rsp=47) B(issue=31 rsp=48) C(issue=48 rsp=49)
+UVM_INFO /opt/Synopsys/vcs/V-2023.12-SP1/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 505000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../tb/coverage/axi4l_gpio_coverage.sv(127) @ 505000: uvm_test_top.env.coverage [COV_SUMMARY] coverage samples: AXI requests=6 GPIO observations=51
+UVM_INFO ../tb/gpio_agent/gpio_monitor.sv(65) @ 505000: uvm_test_top.env.gpio_agent.monitor [GPIO_MON_SUMMARY] samples=51 observed_input_levels=1
+UVM_INFO ../tb/env/axi4l_gpio_scoreboard.sv(501) @ 505000: uvm_test_top.env.scoreboard [SCB_PASS] V2 scoreboard PASS: output_writes=1 reads=3 responses=6 pin_cycles=46 gpio_events=1 int_cycles=46
+UVM_INFO /opt/Synopsys/vcs/V-2023.12-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 505000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   26
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COV_SUMMARY]     1
+[GPIO_MON_SUMMARY]     1
+[RNTST]     1
+[SCB_PASS]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[V3_PIPELINED]     1
+[V3_PIPELINE_PROOF]     1
+[V3_REQ]     6
+[V3_RSP]     6
+[V3_SEQ_READ_RSP]     3
+[V3_SEQ_WRITE_RSP]     3
+
+$finish called from file "/opt/Synopsys/vcs/V-2023.12-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time               505000
+"../tb/assertions/axi4l_gpio_sva.sv", 191: tb_top.dut.axi4l_gpio_sva_i.c_aw_handshake, 51 attempts, 3 match
+"../tb/assertions/axi4l_gpio_sva.sv", 193: tb_top.dut.axi4l_gpio_sva_i.c_w_handshake, 51 attempts, 3 match
+"../tb/assertions/axi4l_gpio_sva.sv", 195: tb_top.dut.axi4l_gpio_sva_i.c_ar_handshake, 51 attempts, 3 match
+"../tb/assertions/axi4l_gpio_sva.sv", 197: tb_top.dut.axi4l_gpio_sva_i.c_b_handshake, 51 attempts, 3 match
+"../tb/assertions/axi4l_gpio_sva.sv", 199: tb_top.dut.axi4l_gpio_sva_i.c_r_handshake, 51 attempts, 3 match
+"../tb/assertions/axi4l_gpio_sva.sv", 202: tb_top.dut.axi4l_gpio_sva_i.c_aw_stall, 51 attempts, 13 match
+"../tb/assertions/axi4l_gpio_sva.sv", 204: tb_top.dut.axi4l_gpio_sva_i.c_w_stall, 51 attempts, 13 match
+"../tb/assertions/axi4l_gpio_sva.sv", 206: tb_top.dut.axi4l_gpio_sva_i.c_ar_stall, 51 attempts, 16 match
+"../tb/assertions/axi4l_gpio_sva.sv", 208: tb_top.dut.axi4l_gpio_sva_i.c_b_stall, 51 attempts, 16 match
+"../tb/assertions/axi4l_gpio_sva.sv", 210: tb_top.dut.axi4l_gpio_sva_i.c_r_stall, 51 attempts, 16 match
+"../tb/assertions/axi4l_gpio_sva.sv", 223: tb_top.dut.axi4l_gpio_sva_i.c_aw_w_same_cycle, 51 attempts, 1 match
+"../tb/assertions/axi4l_gpio_sva.sv", 227: tb_top.dut.axi4l_gpio_sva_i.c_read_only_write, 51 attempts, 1 match
+"../tb/assertions/axi4l_gpio_sva.sv", 237: tb_top.dut.axi4l_gpio_sva_i.c_int_assert, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 240: tb_top.dut.axi4l_gpio_sva_i.c_int_deassert, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 176: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[0].c_synchronized_rise, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 179: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[0].c_synchronized_fall, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 182: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[0].c_w1c_with_hardware_set, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 176: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[1].c_synchronized_rise, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 179: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[1].c_synchronized_fall, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 182: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[1].c_w1c_with_hardware_set, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 176: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[2].c_synchronized_rise, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 179: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[2].c_synchronized_fall, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 182: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[2].c_w1c_with_hardware_set, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 176: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[3].c_synchronized_rise, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 179: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[3].c_synchronized_fall, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 182: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[3].c_w1c_with_hardware_set, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 176: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[4].c_synchronized_rise, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 179: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[4].c_synchronized_fall, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 182: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[4].c_w1c_with_hardware_set, 51 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 213: tb_top.dut.axi4l_gpio_sva_i.c_aw_before_w, 51 attempts, 1 match
+"../tb/assertions/axi4l_gpio_sva.sv", 218: tb_top.dut.axi4l_gpio_sva_i.c_w_before_aw, 51 attempts, 2 match
+"../tb/assertions/axi4l_gpio_sva.sv", 232: tb_top.dut.axi4l_gpio_sva_i.c_output_side_effect, 51 attempts, 1 match
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 505000 ps
+CPU Time:      0.140 seconds;       Data structure size:   0.4Mb
+Thu Oct 29 22:47:30 2026

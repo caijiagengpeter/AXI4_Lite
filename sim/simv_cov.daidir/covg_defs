@@ -1,0 +1,290 @@
+global coverage_group 0 0 axi4l_coverage_pkg::axi4l_gpio_coverage::axi_request_cg __coverage_axi4l_gpio_coverage.axi_request_cg unused_axi4l_gpio_coverage_axi_request_cg_loop_label axi4l_coverage_pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 61 /home/ray/AXI4_Lite/sim/../tb/coverage/axi4l_gpio_coverage.sv
+ 17 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 80 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_10
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+1
+0
+ 9 cp_access 24 0 0 0 0 0 77 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn 77 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 4 read 25 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_0 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 write 26 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_1 0 0 0 0 0 0 0
+ 0
+
+ 7 cp_addr 28 0 0 0 0 0 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_2 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_2 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 3 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 9 registers 29 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_3 0 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_4 0 0 0 0 0
+ 0
+
+ 7 cp_strb 31 0 0 0 0 0 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_5 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_5 0 0 0 0 0 0 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_6 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 4 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 4 none 32 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_7 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 4 full 33 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_8 0 0 0 0 0 0 0
+ 0
+ 1 1 1 0 1 1 6 single 34 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 4 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_9 0 0 0 0 0 0 0
+ 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_a 0 0 0 0 0 0 0
+ 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_b 0 0 0 0 0 0 0
+ 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_c 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 multi 35 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 8 0 0 0 0 0 0 0 0 0
+
+ 13 cp_aw_w_order 37 0 0 0 0 0 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_d 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_d 0 0 0 0 0 0 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_6 0 0 0 0 -1 0 0 -1 0 0 0 -1 1 32 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 10 same_cycle 38 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_3 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 aw_first 39 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_e 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 7 w_first 40 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 79 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_axi_request_cg_fn_f 0 0 0 0 0 0 0
+ 0
+
+ 13 access_x_addr 0 42 0 0 -1 0 0 0 0 2 0 1 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group
+global coverage_group 0 0 axi4l_coverage_pkg::axi4l_gpio_coverage::gpio_observation_cg __coverage_axi4l_gpio_coverage.gpio_observation_cg unused_axi4l_gpio_coverage_gpio_observation_cg_loop_label axi4l_coverage_pkg 0 1 0 0 0  ( 0 
+)
+ 0 47 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_a
+0
+0
+0
+64
+0
+ 0
+
+6
+0
+1
+0
+ 8 cp_reset 56 0 0 0 0 0 82 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn 82 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 cp_rise 57 0 0 0 0 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_0 0 0 0 0 0 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_1 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 7 cp_fall 58 0 0 0 0 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_2 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_2 0 0 0 0 0 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_1 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 15 cp_changed_bits 59 0 0 0 0 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_3 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_3 0 0 0 0 0 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_1 0 0 0 0 -1 0 0 -1 0 0 0 -1 1 32 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 4 none 60 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_4 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 single 61 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_5 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 5 multi 62 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_6 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_7 0 0 0 0 0
+ 0
+
+ 17 cp_output_changed 64 0 0 0 0 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_8 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_8 0 0 0 0 0 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_1 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 6 cp_int 65 0 0 0 0 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_9 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_9 0 0 0 0 0 0 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_1 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 1 0 0 1 0 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 10 edge_x_int 0 66 0 0 -1 84 axi4l_gpio_coverage::axi4l_coverage_pkg_axi4l_gpio_coverage_gpio_observation_cg_fn_1 0 0 0 3 1 2 5 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group

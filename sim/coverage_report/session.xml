@@ -1,0 +1,53 @@
+<session version="1.1" release="V-2023.12-SP1" timestp="2026-10-29 14:47:54 GMT">
+  <info>
+    <attr name="datetime" value="Thu Oct 29 22:47:54 2026
+"/>
+    <attr name="command" value="urg -dir coverage.vdb -report coverage_report"/>
+    <attr name="top_instance" value="tb_top,uvm_pkg"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="147/160" />
+    <metric name="Cond" value="51/63" />
+    <metric name="Toggle" value="1708/2078" />
+    <metric name="Branch" value="85/103" />
+    <metric name="Assert" value="71/73" />
+    <metric name="Group" value="100%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="axi4l_coverage_pkg::axi4l_gpio_coverage::axi_request_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="axi4l_coverage_pkg::axi4l_gpio_coverage::gpio_observation_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+    <scorelist type="total" name="Design Hierarchy Assert">
+      <score name="Assert" value="71/73" />
+      <score name="Score" value="97.26" />
+    </scorelist>
+    <scorelist type="total" name="Module List Assert">
+      <score name="Assert" value="71/73" />
+      <score name="Score" value="97.26" />
+    </scorelist>
+    <scorelist type="total" name="Assertion">
+      <score name="Assert" value="71/73" />
+      <score name="Score" value="97.26" />
+    </scorelist>
+  </scope>
+  </old_coverage>
+</session>

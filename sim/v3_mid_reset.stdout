@@ -1,0 +1,208 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12-SP1_Full64; Runtime version V-2023.12-SP1_Full64;  Oct 29 22:47 2026
+UVM_INFO /opt/Synopsys/vcs/V-2023.12-SP1/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test axi4l_v3_mid_reset_test...
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(79) @ 0: uvm_test_top.env.axi4l_agent.driver [V3_PIPELINED] enabled: max_write_outstanding=2 max_read_outstanding=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(22) @ 85000: uvm_test_top [V3_RESET_INJECT] scenario=partial_write_aw_complete_w_not_issued cycle=9 state AW=1/1 W=0/1 B=0/0 AR=0/1 R=0/0 write_outstanding=0 read_outstanding=0
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 95000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_1 [V3_RESET_RSP] scenario=partial_write index=0 seq_id=1 tr_id=110 aborted=1 resp=xx rdata=0xxxxxxxxx count=1/1
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(47) @ 125000: uvm_test_top [V3_RESET_RELEASE] scenario=partial_write_aw_complete_w_not_issued cycle=13
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 135000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_1 [V3_RESET_SCENARIO_DONE] scenario=partial_write requests=1 responses=1
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 155000: uvm_test_top [V3_RESET_DRAINED] scenario=partial_write write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 165000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=17 AW=17 W=17 addr=0x0 outstanding=1/2 seq_id=2 tr_id=1010
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 175000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=18 addr=0x0 BRESP=00 aborted=0 outstanding=0/2 seq_id=2 tr_id=1010
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 175000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_1 [V3_RESET_RSP] scenario=recovery index=0 seq_id=2 tr_id=1010 aborted=0 resp=00 rdata=0xxxxxxxxx count=1/2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 175000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=18 addr=0x0 outstanding=1/2 seq_id=2 tr_id=1011
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 185000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=19 addr=0x0 RDATA=0x200d0001 RRESP=00 aborted=0 outstanding=0/2 seq_id=2 tr_id=1011
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 185000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_1 [V3_RESET_RSP] scenario=recovery index=1 seq_id=2 tr_id=1011 aborted=0 resp=00 rdata=0x200d0001 count=2/2
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 225000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_1 [V3_RESET_SCENARIO_DONE] scenario=recovery requests=2 responses=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 245000: uvm_test_top [V3_RESET_DRAINED] scenario=recovery_1 write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(218) @ 245000: uvm_test_top [V3_RESET_RECOVERY_PASS] recovery=1 write/read data=0x200d0001
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 255000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=26 AW=26 W=26 addr=0x0 outstanding=1/2 seq_id=3 tr_id=120
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(22) @ 265000: uvm_test_top [V3_RESET_INJECT] scenario=pending_b_blocked_by_bready cycle=27 state AW=0/1 W=0/1 B=1/0 AR=0/1 R=0/0 write_outstanding=1 read_outstanding=0
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 275000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=28 addr=0x0 BRESP=xx aborted=1 outstanding=0/2 seq_id=3 tr_id=120
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 275000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_2 [V3_RESET_RSP] scenario=pending_b index=0 seq_id=3 tr_id=120 aborted=1 resp=xx rdata=0xxxxxxxxx count=1/1
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(47) @ 305000: uvm_test_top [V3_RESET_RELEASE] scenario=pending_b_blocked_by_bready cycle=31
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 315000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_2 [V3_RESET_SCENARIO_DONE] scenario=pending_b requests=1 responses=1
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 335000: uvm_test_top [V3_RESET_DRAINED] scenario=pending_b write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 345000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=35 AW=35 W=35 addr=0x0 outstanding=1/2 seq_id=4 tr_id=1020
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 355000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=36 addr=0x0 BRESP=00 aborted=0 outstanding=0/2 seq_id=4 tr_id=1020
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 355000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_2 [V3_RESET_RSP] scenario=recovery index=0 seq_id=4 tr_id=1020 aborted=0 resp=00 rdata=0xxxxxxxxx count=1/2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 355000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=36 addr=0x0 outstanding=1/2 seq_id=4 tr_id=1021
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 365000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=37 addr=0x0 RDATA=0x200d0002 RRESP=00 aborted=0 outstanding=0/2 seq_id=4 tr_id=1021
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 365000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_2 [V3_RESET_RSP] scenario=recovery index=1 seq_id=4 tr_id=1021 aborted=0 resp=00 rdata=0x200d0002 count=2/2
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 405000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_2 [V3_RESET_SCENARIO_DONE] scenario=recovery requests=2 responses=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 425000: uvm_test_top [V3_RESET_DRAINED] scenario=recovery_2 write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(218) @ 425000: uvm_test_top [V3_RESET_RECOVERY_PASS] recovery=2 write/read data=0x200d0002
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 435000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=44 addr=0x0 outstanding=1/2 seq_id=5 tr_id=130
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(22) @ 445000: uvm_test_top [V3_RESET_INJECT] scenario=pending_r_blocked_by_rready cycle=45 state AW=0/1 W=0/1 B=0/0 AR=0/1 R=1/0 write_outstanding=0 read_outstanding=1
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 455000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=46 addr=0x0 RDATA=0xxxxxxxxx RRESP=xx aborted=1 outstanding=0/2 seq_id=5 tr_id=130
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 455000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_3 [V3_RESET_RSP] scenario=pending_r index=0 seq_id=5 tr_id=130 aborted=1 resp=xx rdata=0xxxxxxxxx count=1/1
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(47) @ 485000: uvm_test_top [V3_RESET_RELEASE] scenario=pending_r_blocked_by_rready cycle=49
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 495000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_3 [V3_RESET_SCENARIO_DONE] scenario=pending_r requests=1 responses=1
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 515000: uvm_test_top [V3_RESET_DRAINED] scenario=pending_r write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 525000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=53 AW=53 W=53 addr=0x0 outstanding=1/2 seq_id=6 tr_id=1030
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 535000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=54 addr=0x0 BRESP=00 aborted=0 outstanding=0/2 seq_id=6 tr_id=1030
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 535000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_3 [V3_RESET_RSP] scenario=recovery index=0 seq_id=6 tr_id=1030 aborted=0 resp=00 rdata=0xxxxxxxxx count=1/2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 535000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=54 addr=0x0 outstanding=1/2 seq_id=6 tr_id=1031
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 545000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=55 addr=0x0 RDATA=0x200d0003 RRESP=00 aborted=0 outstanding=0/2 seq_id=6 tr_id=1031
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 545000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_3 [V3_RESET_RSP] scenario=recovery index=1 seq_id=6 tr_id=1031 aborted=0 resp=00 rdata=0x200d0003 count=2/2
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 585000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_3 [V3_RESET_SCENARIO_DONE] scenario=recovery requests=2 responses=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 605000: uvm_test_top [V3_RESET_DRAINED] scenario=recovery_3 write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(218) @ 605000: uvm_test_top [V3_RESET_RECOVERY_PASS] recovery=3 write/read data=0x200d0003
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 615000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=62 AW=62 W=62 addr=0x0 outstanding=1/2 seq_id=7 tr_id=140
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 625000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=63 AW=63 W=63 addr=0x18 outstanding=2/2 seq_id=7 tr_id=141
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 635000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=64 addr=0x0 outstanding=1/2 seq_id=7 tr_id=142
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 645000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=65 addr=0x18 outstanding=2/2 seq_id=7 tr_id=143
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(22) @ 655000: uvm_test_top [V3_RESET_INJECT] scenario=two_write_two_read_outstanding cycle=66 state AW=0/0 W=0/0 B=1/0 AR=0/0 R=1/0 write_outstanding=2 read_outstanding=2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 665000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=67 addr=0x0 BRESP=xx aborted=1 outstanding=1/2 seq_id=7 tr_id=140
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 665000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_4 [V3_RESET_RSP] scenario=multi_rw index=0 seq_id=7 tr_id=140 aborted=1 resp=xx rdata=0xxxxxxxxx count=1/4
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 665000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=67 addr=0x18 BRESP=xx aborted=1 outstanding=0/2 seq_id=7 tr_id=141
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 665000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_4 [V3_RESET_RSP] scenario=multi_rw index=1 seq_id=7 tr_id=141 aborted=1 resp=xx rdata=0xxxxxxxxx count=2/4
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 665000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=67 addr=0x0 RDATA=0xxxxxxxxx RRESP=xx aborted=1 outstanding=1/2 seq_id=7 tr_id=142
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 665000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_4 [V3_RESET_RSP] scenario=multi_rw index=2 seq_id=7 tr_id=142 aborted=1 resp=xx rdata=0xxxxxxxxx count=3/4
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 665000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=67 addr=0x18 RDATA=0xxxxxxxxx RRESP=xx aborted=1 outstanding=0/2 seq_id=7 tr_id=143
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 665000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_4 [V3_RESET_RSP] scenario=multi_rw index=3 seq_id=7 tr_id=143 aborted=1 resp=xx rdata=0xxxxxxxxx count=4/4
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(47) @ 695000: uvm_test_top [V3_RESET_RELEASE] scenario=two_write_two_read_outstanding cycle=70
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 705000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_4 [V3_RESET_SCENARIO_DONE] scenario=multi_rw requests=4 responses=4
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 725000: uvm_test_top [V3_RESET_DRAINED] scenario=multi_rw write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 735000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=74 AW=74 W=74 addr=0x0 outstanding=1/2 seq_id=8 tr_id=1040
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 745000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=75 addr=0x0 BRESP=00 aborted=0 outstanding=0/2 seq_id=8 tr_id=1040
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 745000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_4 [V3_RESET_RSP] scenario=recovery index=0 seq_id=8 tr_id=1040 aborted=0 resp=00 rdata=0xxxxxxxxx count=1/2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 745000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=75 addr=0x0 outstanding=1/2 seq_id=8 tr_id=1041
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 755000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=76 addr=0x0 RDATA=0x200d0004 RRESP=00 aborted=0 outstanding=0/2 seq_id=8 tr_id=1041
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 755000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_4 [V3_RESET_RSP] scenario=recovery index=1 seq_id=8 tr_id=1041 aborted=0 resp=00 rdata=0x200d0004 count=2/2
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 795000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_4 [V3_RESET_SCENARIO_DONE] scenario=recovery requests=2 responses=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 815000: uvm_test_top [V3_RESET_DRAINED] scenario=recovery_4 write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(218) @ 815000: uvm_test_top [V3_RESET_RECOVERY_PASS] recovery=4 write/read data=0x200d0004
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 825000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=83 AW=83 W=83 addr=0x0 outstanding=1/2 seq_id=9 tr_id=150
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 835000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=84 AW=84 W=84 addr=0x18 outstanding=2/2 seq_id=9 tr_id=151
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(22) @ 845000: uvm_test_top [V3_RESET_INJECT] scenario=request_fetched_waiting_for_write_credit cycle=85 state AW=0/0 W=0/0 B=1/0 AR=0/1 R=0/0 write_outstanding=2 read_outstanding=0
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 855000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=86 addr=0x0 BRESP=xx aborted=1 outstanding=1/2 seq_id=9 tr_id=150
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 855000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_5 [V3_RESET_RSP] scenario=credit_wait index=0 seq_id=9 tr_id=150 aborted=1 resp=xx rdata=0xxxxxxxxx count=1/3
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 855000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=86 addr=0x18 BRESP=xx aborted=1 outstanding=0/2 seq_id=9 tr_id=151
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 855000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_5 [V3_RESET_RSP] scenario=credit_wait index=1 seq_id=9 tr_id=151 aborted=1 resp=xx rdata=0xxxxxxxxx count=2/3
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 855000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_5 [V3_RESET_RSP] scenario=credit_wait index=2 seq_id=9 tr_id=152 aborted=1 resp=xx rdata=0xxxxxxxxx count=3/3
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(47) @ 885000: uvm_test_top [V3_RESET_RELEASE] scenario=request_fetched_waiting_for_write_credit cycle=89
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 895000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_5 [V3_RESET_SCENARIO_DONE] scenario=credit_wait requests=3 responses=3
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 915000: uvm_test_top [V3_RESET_DRAINED] scenario=credit_wait write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 925000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=93 AW=93 W=93 addr=0x0 outstanding=1/2 seq_id=10 tr_id=1050
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 935000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=94 addr=0x0 BRESP=00 aborted=0 outstanding=0/2 seq_id=10 tr_id=1050
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 935000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_5 [V3_RESET_RSP] scenario=recovery index=0 seq_id=10 tr_id=1050 aborted=0 resp=00 rdata=0xxxxxxxxx count=1/2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 935000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=94 addr=0x0 outstanding=1/2 seq_id=10 tr_id=1051
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 945000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=95 addr=0x0 RDATA=0x200d0005 RRESP=00 aborted=0 outstanding=0/2 seq_id=10 tr_id=1051
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 945000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_5 [V3_RESET_RSP] scenario=recovery index=1 seq_id=10 tr_id=1051 aborted=0 resp=00 rdata=0x200d0005 count=2/2
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 985000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_5 [V3_RESET_SCENARIO_DONE] scenario=recovery requests=2 responses=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 1005000: uvm_test_top [V3_RESET_DRAINED] scenario=recovery_5 write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(218) @ 1005000: uvm_test_top [V3_RESET_RECOVERY_PASS] recovery=5 write/read data=0x200d0005
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 1015000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=102 AW=102 W=102 addr=0x0 outstanding=1/2 seq_id=11 tr_id=160
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 1025000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=103 addr=0x0 BRESP=00 aborted=0 outstanding=0/2 seq_id=11 tr_id=160
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 1025000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_6 [V3_RESET_RSP] scenario=completed_boundary index=0 seq_id=11 tr_id=160 aborted=0 resp=00 rdata=0xxxxxxxxx count=1/2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 1025000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=103 addr=0x0 outstanding=1/2 seq_id=11 tr_id=161
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(22) @ 1035000: uvm_test_top [V3_RESET_INJECT] scenario=after_completed_b_and_r_handshakes cycle=104 state AW=0/1 W=0/1 B=0/0 AR=0/1 R=1/1 write_outstanding=0 read_outstanding=1
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 1035000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=104 addr=0x0 RDATA=0x2ace0006 RRESP=00 aborted=0 outstanding=0/2 seq_id=11 tr_id=161
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 1035000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_6 [V3_RESET_RSP] scenario=completed_boundary index=1 seq_id=11 tr_id=161 aborted=0 resp=00 rdata=0x2ace0006 count=2/2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(47) @ 1075000: uvm_test_top [V3_RESET_RELEASE] scenario=after_completed_b_and_r_handshakes cycle=108
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 1075000: uvm_test_top.env.axi4l_agent.sequencer@@mid_reset_seq_6 [V3_RESET_SCENARIO_DONE] scenario=completed_boundary requests=2 responses=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 1095000: uvm_test_top [V3_RESET_DRAINED] scenario=completed_boundary write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(231) @ 1105000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] WRITE issue_cycle=111 AW=111 W=111 addr=0x0 outstanding=1/2 seq_id=12 tr_id=1060
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(315) @ 1115000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] WRITE response_cycle=112 addr=0x0 BRESP=00 aborted=0 outstanding=0/2 seq_id=12 tr_id=1060
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 1115000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_6 [V3_RESET_RSP] scenario=recovery index=0 seq_id=12 tr_id=1060 aborted=0 resp=00 rdata=0xxxxxxxxx count=1/2
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(262) @ 1115000: uvm_test_top.env.axi4l_agent.driver [V3_REQ] READ issue_cycle=112 addr=0x0 outstanding=1/2 seq_id=12 tr_id=1061
+UVM_INFO ../tb/axi_agent/axi4l_driver.sv(338) @ 1125000: uvm_test_top.env.axi4l_agent.driver [V3_RSP] READ response_cycle=113 addr=0x0 RDATA=0x200d0006 RRESP=00 aborted=0 outstanding=0/2 seq_id=12 tr_id=1061
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(174) @ 1125000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_6 [V3_RESET_RSP] scenario=recovery index=1 seq_id=12 tr_id=1061 aborted=0 resp=00 rdata=0x200d0006 count=2/2
+UVM_INFO ../tb/sequences/axi4l_v3_mid_reset_seq.sv(245) @ 1165000: uvm_test_top.env.axi4l_agent.sequencer@@recovery_seq_6 [V3_RESET_SCENARIO_DONE] scenario=recovery requests=2 responses=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(185) @ 1185000: uvm_test_top [V3_RESET_DRAINED] scenario=recovery_6 write_fifo=0 read_fifo=0 write_credits=2 read_credits=2
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(218) @ 1185000: uvm_test_top [V3_RESET_RECOVERY_PASS] recovery=6 write/read data=0x200d0006
+UVM_INFO ../tb/tests/axi4l_v3_mid_reset_test.sv(250) @ 1185000: uvm_test_top [V3_MID_RESET_PASS] all six reset scenarios and post-reset recoveries completed
+UVM_INFO /opt/Synopsys/vcs/V-2023.12-SP1/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 1215000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../tb/coverage/axi4l_gpio_coverage.sv(127) @ 1215000: uvm_test_top.env.coverage [COV_SUMMARY] coverage samples: AXI requests=22 GPIO observations=122
+UVM_INFO ../tb/gpio_agent/gpio_monitor.sv(65) @ 1215000: uvm_test_top.env.gpio_agent.monitor [GPIO_MON_SUMMARY] samples=122 observed_input_levels=7
+UVM_INFO ../tb/env/axi4l_gpio_scoreboard.sv(501) @ 1215000: uvm_test_top.env.scoreboard [SCB_PASS] V2 scoreboard PASS: output_writes=10 reads=7 responses=14 pin_cycles=99 gpio_events=10 int_cycles=99
+UVM_INFO /opt/Synopsys/vcs/V-2023.12-SP1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 1215000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  118
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COV_SUMMARY]     1
+[GPIO_MON_SUMMARY]     1
+[RNTST]     1
+[SCB_PASS]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[V3_MID_RESET_PASS]     1
+[V3_PIPELINED]     1
+[V3_REQ]    22
+[V3_RESET_DRAINED]    12
+[V3_RESET_INJECT]     6
+[V3_RESET_RECOVERY_PASS]     6
+[V3_RESET_RELEASE]     6
+[V3_RESET_RSP]    24
+[V3_RESET_SCENARIO_DONE]    12
+[V3_RSP]    22
+
+$finish called from file "/opt/Synopsys/vcs/V-2023.12-SP1/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time              1215000
+"../tb/assertions/axi4l_gpio_sva.sv", 191: tb_top.dut.axi4l_gpio_sva_i.c_aw_handshake, 122 attempts, 13 match
+"../tb/assertions/axi4l_gpio_sva.sv", 193: tb_top.dut.axi4l_gpio_sva_i.c_w_handshake, 122 attempts, 12 match
+"../tb/assertions/axi4l_gpio_sva.sv", 195: tb_top.dut.axi4l_gpio_sva_i.c_ar_handshake, 122 attempts, 10 match
+"../tb/assertions/axi4l_gpio_sva.sv", 197: tb_top.dut.axi4l_gpio_sva_i.c_b_handshake, 122 attempts, 7 match
+"../tb/assertions/axi4l_gpio_sva.sv", 199: tb_top.dut.axi4l_gpio_sva_i.c_r_handshake, 122 attempts, 7 match
+"../tb/assertions/axi4l_gpio_sva.sv", 202: tb_top.dut.axi4l_gpio_sva_i.c_aw_stall, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 204: tb_top.dut.axi4l_gpio_sva_i.c_w_stall, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 206: tb_top.dut.axi4l_gpio_sva_i.c_ar_stall, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 208: tb_top.dut.axi4l_gpio_sva_i.c_b_stall, 122 attempts, 7 match
+"../tb/assertions/axi4l_gpio_sva.sv", 210: tb_top.dut.axi4l_gpio_sva_i.c_r_stall, 122 attempts, 3 match
+"../tb/assertions/axi4l_gpio_sva.sv", 223: tb_top.dut.axi4l_gpio_sva_i.c_aw_w_same_cycle, 122 attempts, 12 match
+"../tb/assertions/axi4l_gpio_sva.sv", 227: tb_top.dut.axi4l_gpio_sva_i.c_read_only_write, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 237: tb_top.dut.axi4l_gpio_sva_i.c_int_assert, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 240: tb_top.dut.axi4l_gpio_sva_i.c_int_deassert, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 176: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[0].c_synchronized_rise, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 179: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[0].c_synchronized_fall, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 182: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[0].c_w1c_with_hardware_set, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 176: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[1].c_synchronized_rise, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 179: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[1].c_synchronized_fall, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 182: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[1].c_w1c_with_hardware_set, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 176: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[2].c_synchronized_rise, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 179: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[2].c_synchronized_fall, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 182: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[2].c_w1c_with_hardware_set, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 176: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[3].c_synchronized_rise, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 179: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[3].c_synchronized_fall, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 182: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[3].c_w1c_with_hardware_set, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 176: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[4].c_synchronized_rise, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 179: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[4].c_synchronized_fall, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 182: tb_top.dut.axi4l_gpio_sva_i.g_changed_sva[4].c_w1c_with_hardware_set, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 213: tb_top.dut.axi4l_gpio_sva_i.c_aw_before_w, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 218: tb_top.dut.axi4l_gpio_sva_i.c_w_before_aw, 122 attempts, 0 match
+"../tb/assertions/axi4l_gpio_sva.sv", 232: tb_top.dut.axi4l_gpio_sva_i.c_output_side_effect, 122 attempts, 10 match
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1215000 ps
+CPU Time:      0.140 seconds;       Data structure size:   0.4Mb
+Thu Oct 29 22:47:30 2026

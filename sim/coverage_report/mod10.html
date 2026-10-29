@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: axi4l_gpio_sva</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_axi4l_gpio_sva'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_axi4l_gpio_sva')">axi4l_gpio_sva</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 94.93</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod10.html#Toggle" > 89.85</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod10.html#Assert" >100.00</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home/ray/AXI4_Lite/sim/../tb/assertions/axi4l_gpio_sva.sv')">/home/ray/AXI4_Lite/sim/../tb/assertions/axi4l_gpio_sva.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod10.html#inst_tag_12"  onclick="showContent('inst_tag_12')">tb_top.dut.axi4l_gpio_sva_i</a></td>
+<td class="s9 cl rt"> 94.93</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod10.html#Toggle" > 89.85</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod10.html#Assert" >100.00</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_axi4l_gpio_sva'>
+<hr>
+<a name="inst_tag_12"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_12" >tb_top.dut.axi4l_gpio_sva_i</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 94.93</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"><a href="mod10.html#Toggle" > 89.85</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod10.html#Assert" >100.00</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 94.93</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 89.85</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s9 cl rt"> 90.49</td>
+<td class="s9 cl rt"> 97.56</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s6 cl rt"> 69.57</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 94.83</td>
+<td class="wht cl rt"></td>
+<td><a href="mod12.html#inst_tag_14" >dut</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_axi4l_gpio_sva'>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod10.html" >axi4l_gpio_sva</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Totals</td>
+<td class="rt">34</td>
+<td class="rt">25</td>
+<td class="rt">73.53 </td>
+</tr><tr class="s8">
+<td>Total Bits</td>
+<td class="rt">404</td>
+<td class="rt">363</td>
+<td class="rt">89.85 </td>
+</tr><tr class="s9">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">202</td>
+<td class="rt">182</td>
+<td class="rt">90.10 </td>
+</tr><tr class="s8">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">202</td>
+<td class="rt">181</td>
+<td class="rt">89.60 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s7">
+<td>Ports</td>
+<td class="rt">34</td>
+<td class="rt">25</td>
+<td class="rt">73.53 </td>
+</tr><tr class="s8">
+<td>Port Bits</td>
+<td class="rt">404</td>
+<td class="rt">363</td>
+<td class="rt">89.85 </td>
+</tr><tr class="s9">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">202</td>
+<td class="rt">182</td>
+<td class="rt">90.10 </td>
+</tr><tr class="s8">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">202</td>
+<td class="rt">181</td>
+<td class="rt">89.60 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>reset_n</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>awaddr[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>awaddr[4:2]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>awprot[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>awvalid</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>awready</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>wdata[31:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>wstrb[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>wvalid</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>wready</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bresp[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bvalid</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>bready</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>araddr[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>araddr[4:2]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>arprot[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>arvalid</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>arready</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rdata[29:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rdata[31:30]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rresp[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rvalid</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rready</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>i_gpio[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>o_gpio[29:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>o_int</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>write_accept</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>write_word_addr[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>write_data[31:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>write_strb[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>read_accept</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>q_gpio[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>qq_gpio[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>last_gpio[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>changed[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>mask[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>mask[4:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Assert"></a>
+Assert Coverage for Module : <a href="mod10.html" >axi4l_gpio_sva</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Attempted</th><th nowrap width=80>Percent</th><th nowrap width=80>Succeeded/Matched</th><th nowrap width=80>Percent</th></tr><tr>
+<td class="wht cl"><a href="#1767538860" >Assertions</a></td>
+<td class="wht cl rt">38</td>
+<td class="s10 cl rt">38</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">38</td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl"><a href="#469579137" >Cover properties</a></td>
+<td class="wht cl rt">32</td>
+<td class="s10 cl rt">32</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">32</td>
+<td class="s10 cl rt">100.00</td>
+</tr><tr>
+<td class="wht cl"><a href="#1227520166" >Cover sequences</a></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+</tr><tr>
+<td class="wht cl"><b>Total</b></td>
+<td class="wht cl rt">70</td>
+<td class="s10 cl rt">70</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">70</td>
+<td class="s10 cl rt">100.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<br clear=all>
+<a name="1767538860"></a>
+<b>Assertion Details</b><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td>Attempts</td><td>Real Successes</td><td>Failures</td><td>Incomplete</td></tr><tr>
+<td class="wht cl"><a name="284137650"></a>
+a_ar_stable_while_stalled</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">473</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="211529709"></a>
+a_aw_stable_while_stalled</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">748</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1292082285"></a>
+a_b_stable_while_stalled</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">2058</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="329298861"></a>
+a_bresp_is_okay</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">2280</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="789852361"></a>
+a_bvalid_clears_after_handshake</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">110</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1338836736"></a>
+a_bvalid_rise_has_write</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">110</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2142100480"></a>
+a_int_registered_relation</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">4369</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1325635350"></a>
+a_last_samples_qq</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">4369</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1033688136"></a>
+a_output_change_follows_output_write</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">113</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="893323427"></a>
+a_q_samples_input</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">4369</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1170091515"></a>
+a_qq_samples_q</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">4369</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="65370749"></a>
+a_r_stable_while_stalled</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">1739</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="138574689"></a>
+a_read_accept_sets_rvalid</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">154</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="400310169"></a>
+a_read_only_write_no_mask_effect</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">5</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="607667164"></a>
+a_read_only_write_no_output_effect</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">5</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1679828923"></a>
+a_reset_clears_channels_and_outputs</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">35</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1651511628"></a>
+a_reset_clears_gpio_input_state</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">35</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1556010397"></a>
+a_rresp_is_okay</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">1893</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2016563897"></a>
+a_rvalid_clears_after_handshake</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">88</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1285669829"></a>
+a_rvalid_rise_has_read</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">90</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="755765218"></a>
+a_w_stable_while_stalled</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">748</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="483033370"></a>
+a_write_accept_sets_bvalid</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">222</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1471525372"></a>
+a_zero_strobe_output_write_has_no_effect</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">70</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1327994168"></a>
+g_changed_sva[0].a_changed_holds_without_w1c</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">114</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="439081493"></a>
+g_changed_sva[0].a_hardware_change_sets_sticky</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">10</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1983228081"></a>
+g_changed_sva[0].a_w1c_clears_without_hardware_set</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">6</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1316678041"></a>
+g_changed_sva[1].a_changed_holds_without_w1c</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">108</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="427765366"></a>
+g_changed_sva[1].a_hardware_change_sets_sticky</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">10</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1994544208"></a>
+g_changed_sva[1].a_w1c_clears_without_hardware_set</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">4</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1305361914"></a>
+g_changed_sva[2].a_changed_holds_without_w1c</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">108</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="416449239"></a>
+g_changed_sva[2].a_hardware_change_sets_sticky</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">8</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2005860335"></a>
+g_changed_sva[2].a_w1c_clears_without_hardware_set</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">4</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1294045787"></a>
+g_changed_sva[3].a_changed_holds_without_w1c</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">68</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="405133112"></a>
+g_changed_sva[3].a_hardware_change_sets_sticky</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">6</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2017176462"></a>
+g_changed_sva[3].a_w1c_clears_without_hardware_set</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">4</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1282729660"></a>
+g_changed_sva[4].a_changed_holds_without_w1c</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">44</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="393816985"></a>
+g_changed_sva[4].a_hardware_change_sets_sticky</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">6</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2028492589"></a>
+g_changed_sva[4].a_w1c_clears_without_hardware_set</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">4</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr></table><br clear=all>
+<hr>
+<br clear=all>
+<a name="469579137"></a>
+<b>Cover Directives for Properties: Details</b><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td>Attempts</td><td>Matches</td><td>Incomplete</td></tr><tr>
+<td class="wht cl"><a name="424234736"></a>
+c_ar_handshake</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">154</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2139574713"></a>
+c_ar_stall</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">473</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1022944903"></a>
+c_aw_before_w</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">42</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="351626795"></a>
+c_aw_handshake</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">222</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2082784642"></a>
+c_aw_stall</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">748</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="206740457"></a>
+c_aw_w_same_cycle</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">177</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2010235085"></a>
+c_b_handshake</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">222</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1786386684"></a>
+c_b_stall</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">2058</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1081370499"></a>
+c_int_assert</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">2</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1649458110"></a>
+c_int_deassert</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">2</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1727025182"></a>
+c_output_side_effect</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">113</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1058020675"></a>
+c_r_handshake</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">154</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="559675148"></a>
+c_r_stall</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">1739</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="578870770"></a>
+c_read_only_write</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">5</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2107154169"></a>
+c_w_before_aw</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">43</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1748415144"></a>
+c_w_handshake</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">222</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1250069617"></a>
+c_w_stall</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">748</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1484199052"></a>
+g_changed_sva[0].c_synchronized_fall</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">5</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="472583298"></a>
+g_changed_sva[0].c_synchronized_rise</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">5</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="49197988"></a>
+g_changed_sva[0].c_w1c_with_hardware_set</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">1</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1472882925"></a>
+g_changed_sva[1].c_synchronized_fall</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">5</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="483899425"></a>
+g_changed_sva[1].c_synchronized_rise</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">5</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="37881861"></a>
+g_changed_sva[1].c_w1c_with_hardware_set</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">1</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1461566798"></a>
+g_changed_sva[2].c_synchronized_fall</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">4</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="495215552"></a>
+g_changed_sva[2].c_synchronized_rise</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">4</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="26565734"></a>
+g_changed_sva[2].c_w1c_with_hardware_set</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">1</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1450250671"></a>
+g_changed_sva[3].c_synchronized_fall</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">3</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="506531679"></a>
+g_changed_sva[3].c_synchronized_rise</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">3</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="15249607"></a>
+g_changed_sva[3].c_w1c_with_hardware_set</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">1</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1438934544"></a>
+g_changed_sva[4].c_synchronized_fall</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">3</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="517847806"></a>
+g_changed_sva[4].c_synchronized_rise</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">3</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="3933480"></a>
+g_changed_sva[4].c_w1c_with_hardware_set</td>
+<td class="s9 cl rt">4404</td>
+<td class="s9 cl rt">1</td>
+<td class="wht cl rt">0</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_12">
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Assert">Assert</a>    </li>
+  </ul>
+  <ul name="tag_axi4l_gpio_sva">
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Assert">Assert</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

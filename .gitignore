@@ -1,0 +1,15 @@
+# VCS simulation outputs
+simv
+simv.daidir/
+csrc/
+*.vdb/
+DVEfiles/
+*.fsdb
+*.vcd
+*.vpd
+*.log
+*.key
+
+# Temporary files
+*.swp
+*.tmp
